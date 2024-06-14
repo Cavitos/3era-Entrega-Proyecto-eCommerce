@@ -1,0 +1,54 @@
+# AppEcommerce
+
+AppEcommerce es una aplicación de comercio electrónico construida con Django· Utiliza el patrón MVT (Modelo-Vista-Plantilla) y ofrece una variedad de funcionalidades, incluyendo la gestión de productos, categorías y clientes, la búsqueda de productos, y un carrito de compras·
+
+## Modelos
+
+La aplicación incluye los siguientes modelos:
+
+- `Product`: Representa un producto en la tienda·
+- `Category`: Representa una categoría de productos·
+- `Customer`: Representa un cliente de la tienda·
+- `Cart`: Representa un carrito de compras·
+
+## Vistas
+
+La aplicación incluye las siguientes vistas:
+
+- `home`: Muestra la página de inicio de la tienda·
+- `products`: Muestra una lista de todos los productos·
+- `product_detail`: Muestra los detalles de un producto específico·
+- `product`, `category`, `customer`: Permiten la creación de nuevos productos, categorías y clientes·
+- `search`: Permite buscar productos por nombre·
+- `add_to_cart`: Permite agregar productos al carrito de compras·
+- `remove_from_cart`: Permite eliminar productos del carrito de compras·
+- `checkout`: Permite realizar el checkout y vaciar el carrito de compras·
+
+## Formularios
+
+La aplicación incluye los siguientes formularios:
+
+- `ProductForm`: Permite la creación y edición de productos·
+- `CategoryForm`: Permite la creación y edición de categorías·
+- `CustomerForm`: Permite la creación y edición de clientes·
+- `SearchForm`: Permite buscar productos por nombre·
+
+## Pruebas
+
+Para probar la aplicación, sigue estos pasos:
+
+1· Asegúrate de que Django esté correctamente instalado y que puedas ejecutar el servidor de desarrollo con `python manage·py runserver`·
+2· Prueba la creación de objetos de producto, categoría y cliente a través del panel de administración de Django·
+3· Prueba la inserción de datos a través de los formularios de producto, categoría y cliente·
+4· Prueba la funcionalidad de búsqueda ingresando un término de búsqueda en el formulario de búsqueda·
+5· Prueba la funcionalidad del carrito de compras agregando y eliminando productos, y realizando el checkout·
+
+## Ubicación de las funcionalidades
+
+- Los modelos se encuentran en `AppeCommerce/models·py`·
+- Los formularios se encuentran en `AppeCommerce/forms·py`·
+- Las vistas se encuentran en `AppeCommerce/views·py`·
+- Las plantillas se encuentran en la carpeta `templates` dentro de la aplicación "AppeCommerce"·
+- Los estilos CSS se encuentran en la carpeta `static/AppeCommerce`·
+
+Esperamos que disfrutes utilizando AppEcommerce! 

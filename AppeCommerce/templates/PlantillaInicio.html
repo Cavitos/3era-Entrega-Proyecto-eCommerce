@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AppeCommerce</title>
+</head>
+<body>
+    <header>
+        {% include 'navbar.html' %}
+    </header>
+
+    {% block content %}
+    <!-- Este bloque será sobreescrito por las demás plantillas -->
+    {% endblock %}
+
+    <footer>
+        <p>© 2024 AppeCommerce. Todos los derechos reservados.</p>
+        <p><a href="{% url 'contact' %}">Contacto</a></p>
+        <p><a href="{% url 'privacy' %}">Política de privacidad</a></p>
+        <p><a href="{% url 'terms' %}">Términos de servicio</a></p>
+    </footer>
+</body>
+</html>
